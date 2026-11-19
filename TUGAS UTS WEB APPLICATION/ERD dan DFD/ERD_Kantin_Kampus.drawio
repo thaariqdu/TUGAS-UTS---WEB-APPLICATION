@@ -1,0 +1,199 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="page1" name="ERD">
+    <mxGraphModel dx="1422" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="ERD (Crow's Foot) – Sistem Pre-Order Kantin Kampus" vertex="1" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;">
+          <mxGeometry x="40" y="0" width="900" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PENGGUNA" value="PENGGUNA" vertex="1" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=13;">
+          <mxGeometry x="40" y="40" width="240" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="PENGGUNA_0" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp;&amp;nbsp;id_pengguna : INT" vertex="1" parent="PENGGUNA" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="30" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="PENGGUNA_1" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;nim_nip : VARCHAR(20)" vertex="1" parent="PENGGUNA" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="52" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="PENGGUNA_2" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;nama : VARCHAR(100)" vertex="1" parent="PENGGUNA" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="74" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="PENGGUNA_3" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;no_whatsapp : VARCHAR(15)" vertex="1" parent="PENGGUNA" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="96" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="PENGGUNA_4" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;password : VARCHAR(255)" vertex="1" parent="PENGGUNA" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="118" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="PENGGUNA_5" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;role : VARCHAR(20)" vertex="1" parent="PENGGUNA" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="140" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="PESANAN" value="PESANAN" vertex="1" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=13;">
+          <mxGeometry x="440" y="40" width="240" height="184" as="geometry" />
+        </mxCell>
+        <mxCell id="PESANAN_0" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp;&amp;nbsp;id_pesanan : INT" vertex="1" parent="PESANAN" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="30" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="PESANAN_1" value="&lt;i&gt;FK&lt;/i&gt;&amp;nbsp;&amp;nbsp;id_pengguna : INT" vertex="1" parent="PESANAN" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="52" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="PESANAN_2" value="&lt;i&gt;FK&lt;/i&gt;&amp;nbsp;&amp;nbsp;id_stand : INT" vertex="1" parent="PESANAN" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="74" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="PESANAN_3" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;tgl_pesan : DATETIME" vertex="1" parent="PESANAN" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="96" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="PESANAN_4" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;jam_takeaway : DATETIME" vertex="1" parent="PESANAN" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="118" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="PESANAN_5" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;status_masak : VARCHAR(20)" vertex="1" parent="PESANAN" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="140" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="PESANAN_6" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;total_harga : DECIMAL(10,2)" vertex="1" parent="PESANAN" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="162" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="DETAIL_PESANAN" value="DETAIL_PESANAN" vertex="1" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=13;">
+          <mxGeometry x="840" y="40" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="DETAIL_PESANAN_0" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp;&amp;nbsp;id_detail : INT" vertex="1" parent="DETAIL_PESANAN" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="30" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="DETAIL_PESANAN_1" value="&lt;i&gt;FK&lt;/i&gt;&amp;nbsp;&amp;nbsp;id_pesanan : INT" vertex="1" parent="DETAIL_PESANAN" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="52" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="DETAIL_PESANAN_2" value="&lt;i&gt;FK&lt;/i&gt;&amp;nbsp;&amp;nbsp;id_menu : INT" vertex="1" parent="DETAIL_PESANAN" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="74" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="DETAIL_PESANAN_3" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;jumlah : INT" vertex="1" parent="DETAIL_PESANAN" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="96" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="DETAIL_PESANAN_4" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;subtotal : DECIMAL(10,2)" vertex="1" parent="DETAIL_PESANAN" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="118" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="MENU" value="MENU" vertex="1" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=13;">
+          <mxGeometry x="1240" y="40" width="240" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="MENU_0" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp;&amp;nbsp;id_menu : INT" vertex="1" parent="MENU" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="30" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="MENU_1" value="&lt;i&gt;FK&lt;/i&gt;&amp;nbsp;&amp;nbsp;id_stand : INT" vertex="1" parent="MENU" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="52" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="MENU_2" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;nama_menu : VARCHAR(100)" vertex="1" parent="MENU" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="74" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="MENU_3" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;harga : DECIMAL(10,2)" vertex="1" parent="MENU" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="96" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="MENU_4" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;stok : INT" vertex="1" parent="MENU" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="118" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="MENU_5" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;status_tersedia : BOOLEAN" vertex="1" parent="MENU" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="140" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="STAND" value="STAND" vertex="1" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=13;">
+          <mxGeometry x="1240" y="400" width="240" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="STAND_0" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp;&amp;nbsp;id_stand : INT" vertex="1" parent="STAND" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="30" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="STAND_1" value="&lt;i&gt;FK&lt;/i&gt;&amp;nbsp;&amp;nbsp;id_pengguna : INT" vertex="1" parent="STAND" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="52" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="STAND_2" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;nama_stand : VARCHAR(100)" vertex="1" parent="STAND" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="74" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="STAND_3" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;status_buka : BOOLEAN" vertex="1" parent="STAND" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="96" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="TRANSAKSI" value="TRANSAKSI" vertex="1" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=13;">
+          <mxGeometry x="440" y="400" width="240" height="184" as="geometry" />
+        </mxCell>
+        <mxCell id="TRANSAKSI_0" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp;&amp;nbsp;id_transaksi : INT" vertex="1" parent="TRANSAKSI" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="30" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="TRANSAKSI_1" value="&lt;i&gt;FK&lt;/i&gt;&amp;nbsp;&amp;nbsp;id_pesanan : INT" vertex="1" parent="TRANSAKSI" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="52" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="TRANSAKSI_2" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;metode_bayar : VARCHAR(20)" vertex="1" parent="TRANSAKSI" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="74" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="TRANSAKSI_3" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;bukti_bayar : VARCHAR(255)" vertex="1" parent="TRANSAKSI" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="96" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="TRANSAKSI_4" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;status_pembayaran : VARCHAR(20)" vertex="1" parent="TRANSAKSI" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="118" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="TRANSAKSI_5" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;waktu_bayar : DATETIME" vertex="1" parent="TRANSAKSI" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="140" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="TRANSAKSI_6" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;total_bayar : DECIMAL(10,2)" vertex="1" parent="TRANSAKSI" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="162" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="NOTIFIKASI" value="NOTIFIKASI" vertex="1" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=13;">
+          <mxGeometry x="840" y="400" width="240" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="NOTIFIKASI_0" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp;&amp;nbsp;id_notifikasi : INT" vertex="1" parent="NOTIFIKASI" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="30" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="NOTIFIKASI_1" value="&lt;i&gt;FK&lt;/i&gt;&amp;nbsp;&amp;nbsp;id_pesanan : INT" vertex="1" parent="NOTIFIKASI" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="52" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="NOTIFIKASI_2" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;jenis : VARCHAR(20)" vertex="1" parent="NOTIFIKASI" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="74" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="NOTIFIKASI_3" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;pesan : TEXT" vertex="1" parent="NOTIFIKASI" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="96" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="NOTIFIKASI_4" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;waktu_kirim : DATETIME" vertex="1" parent="NOTIFIKASI" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="118" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="NOTIFIKASI_5" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;status_kirim : VARCHAR(20)" vertex="1" parent="NOTIFIKASI" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;fontSize=12;fontStyle=0;">
+          <mxGeometry x="0" y="140" width="240" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" value="memesan" edge="1" parent="1" source="PENGGUNA" target="PESANAN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=1;exitY=0.432;exitDx=0;exitDy=0;entryX=0;entryY=0.38;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" value="berisi" edge="1" parent="1" source="PESANAN" target="DETAIL_PESANAN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;startArrow=ERmandOne;startFill=0;endArrow=ERoneToMany;endFill=0;exitX=1;exitY=0.38;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" value="dipesan dalam" edge="1" parent="1" source="MENU" target="DETAIL_PESANAN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=0;exitY=0.432;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" value="menyediakan" edge="1" parent="1" source="STAND" target="MENU" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" value="menerima" edge="1" parent="1" source="STAND" target="PESANAN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.9;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1150" y="459" />
+              <mxPoint x="1150" y="206" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r6" value="mengelola (pengelola stand)" edge="1" parent="1" source="PENGGUNA" target="STAND" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="640" />
+              <mxPoint x="1360" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7" value="dibayar melalui" edge="1" parent="1" source="PESANAN" target="TRANSAKSI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;startArrow=ERmandOne;startFill=0;endArrow=ERmandOne;endFill=0;exitX=0.3;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r8" value="memicu" edge="1" parent="1" source="PESANAN" target="NOTIFIKASI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;exitX=0.85;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="644" y="300" />
+              <mxPoint x="912" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note" value="&lt;b&gt;Keterangan&lt;/b&gt;&lt;br&gt;• role (PENGGUNA): mahasiswa, dosen, pengelola_stand, pengelola_kantin&lt;br&gt;• status_masak (PESANAN): menunggu, dimasak, siap, diambil&lt;br&gt;• metode_bayar (TRANSAKSI): QRIS, e-wallet; status_pembayaran: pending, berhasil, gagal&lt;br&gt;• jenis (NOTIFIKASI): pesanan_masuk, siap_pickup&lt;br&gt;• PK = Primary Key, FK = Foreign Key. Notasi Crow's Foot: garis tunggal = satu, kaki gagak = banyak" vertex="1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;">
+          <mxGeometry x="40" y="690" width="820" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

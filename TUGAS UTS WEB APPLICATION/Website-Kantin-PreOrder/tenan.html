@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard Pengelola Stand - PreOrder Kantin</title>
+<link rel="icon" href="Asset/image/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Asset/css/style.css">
+</head>
+<body data-page="tenan">
+<div class="dash">
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><img src="Asset/image/logo.svg" alt="">Panel Stand</a>
+    <nav aria-label="Dashboard"><a class="on" href="tenan.html">Pesanan &amp; Jadwal Masak</a><a href="#menu-stok">Menu &amp; Stok</a><a href="admin.html">Laporan Penjualan</a><a href="tenan.html">Profil Stand</a></nav>
+    <div class="me">Masuk sebagai<b>Pengelola Stand</b><a href="index.html">Keluar</a><button class="btn btn-sm" data-reset type="button" style="color:var(--dark-text);border-color:var(--dark-text);margin-top:6px">Reset data demo</button></div>
+  </aside>
+  <main class="content">
+    <div class="head-row">
+      <div><h1>Pesanan &amp; jadwal masak</h1><p class="muted">Stand Nasi &amp; Lauk (contoh) · Data contoh</p></div>
+      <div class="toggle"><span id="open-label">Stand buka</span><button class="switch" id="open" type="button" aria-pressed="true" aria-label="Stand buka"></button></div>
+    </div>
+    <div class="tiles4">
+      <div class="t"><small>Pesanan masuk</small><b id="k-total">0</b></div><div class="t"><small>Menunggu dimasak</small><b id="k-wait">0</b></div>
+      <div class="t"><small>Sedang dimasak</small><b id="k-cook">0</b></div><div class="t"><small>Siap diambil</small><b id="k-ready">0</b></div>
+    </div>
+    <section class="block"><div class="head-row"><h2>Jadwal masak hari ini</h2><span class="muted" style="font-size:13px">Diurutkan berdasarkan jam takeaway</span></div>
+      <div class="table-wrap"><table><thead><tr><th>PESANAN</th><th>MENU</th><th>TAKEAWAY</th><th>STATUS</th><th>AKSI</th></tr></thead><tbody id="jadwal"></tbody></table></div></section>
+    <section class="block"><div class="head-row"><h2>Menu &amp; stok</h2><button class="btn btn-primary btn-sm" type="button">+ Tambah menu</button></div><div class="mini-grid" id="menu-stok"></div></section>
+  </main>
+</div>
+<script src="Asset/js/data.js"></script>
+<script src="Asset/js/app.js"></script>
+</body>
+</html>

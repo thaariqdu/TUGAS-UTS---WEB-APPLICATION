@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daftar &amp; Masuk - PreOrder Kantin</title>
+<link rel="icon" href="Asset/image/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Asset/css/style.css">
+</head>
+<body data-page="daftar">
+<main class="auth">
+  <section class="auth-left">
+    <a class="brand" href="index.html"><img src="Asset/image/logo.svg" alt="">PreOrder Kantin</a>
+    <div><h1>Satu akun untuk pesan, bayar, dan ambil.</h1><p>Nomor WhatsApp dipakai untuk mengirim notifikasi saat pesananmu siap diambil.</p></div>
+    <ol style="margin:0;padding-left:20px;font-weight:600;line-height:2"><li>Isi data diri</li><li>Pilih menu &amp; jam takeaway</li><li>Bayar QRIS dan tunggu notifikasi</li></ol>
+  </section>
+  <section class="auth-right"><div class="auth-card">
+    <div class="tabs" role="tablist"><button class="on" data-tab="daftar" type="button">Daftar</button><button data-tab="masuk" type="button">Masuk</button></div>
+
+    <form id="form-daftar" style="display:flex;flex-direction:column;gap:20px">
+      <div><h1 style="font-size:26px;font-weight:800">Buat akun baru</h1><p class="muted" style="font-size:14px;margin-top:6px">Untuk mahasiswa, dosen, dan pengelola stand.</p></div>
+      <div class="field"><label>Saya mendaftar sebagai</label>
+        <div class="roles"><label><input type="radio" name="role" value="mahasiswa" checked>Mahasiswa</label><label><input type="radio" name="role" value="dosen">Dosen</label><label><input type="radio" name="role" value="tenan">Tenan</label></div></div>
+      <div class="field"><label for="nim">NIM / NIP</label><input id="nim" name="nim" required placeholder="Masukkan NIM atau NIP"></div>
+      <div class="field"><label for="nama">Nama lengkap</label><input id="nama" name="nama" required placeholder="Nama sesuai kartu"></div>
+      <div class="field"><label for="wa">Nomor WhatsApp</label><input id="wa" name="wa" type="tel" required placeholder="08xxxxxxxxxx"><span class="hint">Dipakai untuk notifikasi pesanan siap diambil.</span></div>
+      <div class="field"><label for="pw">Kata sandi</label><input id="pw" name="pw" type="password" required minlength="8" placeholder="Minimal 8 karakter"></div>
+      <button class="btn btn-primary btn-lg btn-block" type="submit" style="font-weight:800">Daftar &amp; Lanjut Pesan</button>
+    </form>
+
+    <form id="form-masuk" class="hidden" style="display:flex;flex-direction:column;gap:20px">
+      <div><h1 style="font-size:26px;font-weight:800">Masuk</h1><p class="muted" style="font-size:14px;margin-top:6px">Gunakan NIM / NIP dan kata sandimu.</p></div>
+      <div class="field"><label>Masuk sebagai</label>
+        <div class="roles"><label><input type="radio" name="role" value="mahasiswa" checked>Mahasiswa</label><label><input type="radio" name="role" value="dosen">Dosen</label><label><input type="radio" name="role" value="tenan">Tenan</label></div></div>
+      <div class="field"><label for="nim2">NIM / NIP</label><input id="nim2" name="nim" required placeholder="Masukkan NIM atau NIP"></div>
+      <div class="field"><label for="pw2">Kata sandi</label><input id="pw2" name="pw" type="password" required placeholder="Kata sandi"></div>
+      <button class="btn btn-primary btn-lg btn-block" type="submit" style="font-weight:800">Masuk</button>
+    </form>
+    <p class="note" style="text-align:center">Prototype: data tersimpan di browser ini saja.</p>
+  </div></section>
+</main>
+<script src="Asset/js/data.js"></script>
+<script src="Asset/js/app.js"></script>
+</body>
+</html>

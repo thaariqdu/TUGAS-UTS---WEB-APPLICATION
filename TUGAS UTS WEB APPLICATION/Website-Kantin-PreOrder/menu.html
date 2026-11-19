@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pilih Menu - PreOrder Kantin</title>
+<link rel="icon" href="Asset/image/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Asset/css/style.css">
+</head>
+<body data-page="menu">
+<header class="nav"><div class="container">
+  <a class="brand" href="index.html"><img src="Asset/image/logo.svg" alt="">PreOrder Kantin</a>
+  <nav class="nav-links" aria-label="Utama"><a class="active" href="menu.html">Menu</a><a href="status.html">Pesanan Saya</a>
+    <a class="btn btn-primary" href="checkout.html" style="color:#fff"><span>Keranjang (<span id="cart-count">0</span>)</span></a></nav>
+</div></header>
+
+<main class="container page">
+  <div class="page-head">
+    <div><h1>Pilih menu</h1><p class="muted">Stok diperbarui langsung oleh tiap stand. Menu yang habis tidak bisa dipesan.</p></div>
+    <div class="field"><label for="cari">Cari menu</label><input id="cari" type="search" placeholder="Contoh: ayam geprek"></div>
+  </div>
+  <div class="stand-chips" id="stand-chips" aria-label="Filter stand"></div>
+  <div class="layout">
+    <div class="menu-grid" id="menu-grid" aria-live="polite"></div>
+    <aside class="side" aria-label="Keranjang">
+      <div style="display:flex;justify-content:space-between;align-items:center"><h3>Pesananmu</h3><span class="muted" id="cart-n" style="font-size:13px">0 item</span></div>
+      <div id="cart-items" style="display:flex;flex-direction:column;gap:14px"></div>
+      <hr class="divider">
+      <div class="total"><span>Total</span><span id="cart-total">Rp0</span></div>
+      <div class="field"><label for="jam">Jam takeaway</label><select id="jam"></select></div>
+      <a id="go-checkout" class="btn btn-orange btn-lg btn-block" href="checkout.html">Lanjut ke Pembayaran</a>
+      <p class="note">Contoh data. Menu, harga, dan stok akan mengikuti data tiap stand.</p>
+    </aside>
+  </div>
+</main>
+<script src="Asset/js/data.js"></script>
+<script src="Asset/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard Pengelola Kantin - PreOrder Kantin</title>
+<link rel="icon" href="Asset/image/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Asset/css/style.css">
+</head>
+<body data-page="admin">
+<div class="dash">
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><img src="Asset/image/logo.svg" alt="">Admin Kantin</a>
+    <nav aria-label="Dashboard"><a class="on" href="admin.html">Laporan Transaksi</a><a href="#pengguna">Kelola Pengguna</a><a href="#stand">Kelola Stand</a><a href="admin.html">Log Notifikasi</a></nav>
+    <div class="me">Masuk sebagai<b>Pengelola Kantin</b><a href="index.html">Keluar</a><button class="btn btn-sm" data-reset type="button" style="color:var(--dark-text);border-color:var(--dark-text);margin-top:6px">Reset data demo</button></div>
+  </aside>
+  <main class="content">
+    <div class="head-row"><div><h1>Laporan transaksi seluruh stand</h1><p class="muted">Data contoh dan pesanan dari prototype ini</p></div><button class="btn btn-outline" id="unduh" type="button">Unduh laporan (CSV)</button></div>
+    <div class="tiles4">
+      <div class="t"><small>Total pesanan</small><b id="a-pesanan">0</b></div><div class="t"><small>Total transaksi</small><b id="a-total">Rp0</b></div>
+      <div class="t"><small>Pembayaran berhasil</small><b id="a-ok">0</b></div><div class="t"><small>Pembayaran gagal</small><b id="a-gagal">0</b></div>
+    </div>
+    <section class="block"><h2>Ringkasan per stand</h2>
+      <div class="table-wrap"><table><thead><tr><th>STAND</th><th>PESANAN</th><th>TOTAL TRANSAKSI</th><th>STATUS</th></tr></thead><tbody id="per-stand"></tbody></table></div></section>
+    <div class="two">
+      <section class="block" id="pengguna"><div class="head-row"><h2>Pengguna</h2><button class="btn btn-primary btn-sm" type="button">+ Tambah akun</button></div><div id="user-list" style="display:flex;flex-direction:column;gap:12px"></div></section>
+      <section class="block" id="stand"><div class="head-row"><h2>Data stand</h2><button class="btn btn-primary btn-sm" type="button">+ Tambah stand</button></div><div id="stand-list" style="display:flex;flex-direction:column;gap:12px"></div></section>
+    </div>
+  </main>
+</div>
+<script src="Asset/js/data.js"></script>
+<script src="Asset/js/app.js"></script>
+</body>
+</html>

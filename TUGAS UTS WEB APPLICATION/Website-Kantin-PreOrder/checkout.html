@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keranjang &amp; Pembayaran - PreOrder Kantin</title>
+<link rel="icon" href="Asset/image/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Asset/css/style.css">
+</head>
+<body data-page="checkout">
+<header class="nav"><div class="container">
+  <a class="brand" href="index.html"><img src="Asset/image/logo.svg" alt="">PreOrder Kantin</a>
+  <a href="menu.html" style="font-weight:700;font-size:15px;color:var(--green-dark)">&larr; Kembali ke menu</a>
+</div></header>
+
+<main class="container page">
+  <h1>Keranjang &amp; pembayaran</h1>
+  <div class="steps"><span class="step on"><i>1</i>Keranjang</span><span class="step on"><i>2</i>Jam takeaway</span><span class="step on"><i>3</i>Bayar</span><span class="step"><i>4</i>Pesanan diproses</span></div>
+  <div class="layout">
+    <div class="col">
+      <section class="block"><h2>1. Pesananmu</h2><div id="co-items" style="display:flex;flex-direction:column;gap:18px"></div></section>
+      <section class="block"><h2>2. Jam takeaway</h2><div class="times" id="times"></div><div class="info">Estimasi makanan siap sebelum jam takeaway yang dipilih.</div></section>
+      <section class="block"><h2>3. Metode pembayaran</h2>
+        <div class="methods"><label><input type="radio" name="bayar" value="QRIS" checked>QRIS</label><label><input type="radio" name="bayar" value="E-Wallet">E-Wallet</label></div></section>
+    </div>
+    <aside class="block pay" aria-label="Pembayaran">
+      <div style="display:flex;justify-content:space-between;align-items:center"><h2>Bayar dengan QRIS</h2><span class="pill wait">Menunggu bayar</span></div>
+      <div class="qr"><img src="Asset/image/qr-placeholder.svg" alt="">Kode QRIS dari payment gateway tampil di sini</div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div class="sum"><span>Subtotal</span><b class="t-total">Rp0</b></div>
+        <div class="sum"><span>Jam takeaway</span><b id="t-jam">12.15</b></div>
+        <hr class="divider">
+        <div class="total"><span>Total bayar</span><span class="t-total">Rp0</span></div>
+      </div>
+      <button id="pay" class="btn btn-orange btn-lg btn-block" type="button">Saya sudah membayar</button>
+      <p class="note">Status pembayaran dikonfirmasi otomatis oleh payment gateway. Bukti pembayaran dikirim setelah transaksi terverifikasi. (Prototype: tombol ini mensimulasikan pembayaran berhasil.)</p>
+    </aside>
+  </div>
+</main>
+<script src="Asset/js/data.js"></script>
+<script src="Asset/js/app.js"></script>
+</body>
+</html>

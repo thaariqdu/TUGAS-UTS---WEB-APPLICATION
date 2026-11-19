@@ -1,0 +1,268 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="page1" name="DFD Level 2 - Proses 3.0">
+    <mxGraphModel dx="1422" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="750" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="DFD Level 2 – Proses 3.0 Buat Pre-Order &amp; Takeaway" vertex="1" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;">
+          <mxGeometry x="30" y="10" width="1100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="Mahasiswa &amp; Dosen" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="15" y="292" width="170" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="&lt;b&gt;D3&lt;/b&gt;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;Menu" style="shape=partialRectangle;whiteSpace=wrap;html=1;right=0;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="695" y="87" width="170" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="&lt;b&gt;D4&lt;/b&gt;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;Pesanan" style="shape=partialRectangle;whiteSpace=wrap;html=1;right=0;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="537" width="170" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="&lt;b&gt;3.1&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Tampilkan Menu &amp; Stok" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="315" y="62" width="210" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="&lt;b&gt;3.2&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Validasi Pilihan &amp; Stok" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="315" y="282" width="210" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="&lt;b&gt;3.3&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Tentukan Jam Takeaway &amp; Estimasi" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="675" y="282" width="210" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="&lt;b&gt;3.4&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Simpan Pesanan &amp; Hitung Total" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="282" width="210" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" value="&lt;b&gt;4.0&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Proses Pembayaran Digital" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;strokeWidth=2;fontSize=12;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="292" width="200" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="Data menu &amp; stok" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n3" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" value="Daftar menu &amp; stok" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n5" target="n2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" value="Pilihan menu &amp; jumlah" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n2" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" value="Data stok terkini" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n3" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" value="Pesanan valid" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" value="Jam takeaway" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;curved=1;" edge="1" parent="1" source="n2" target="n7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" value="Estimasi waktu&lt;br&gt;pengambilan" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;curved=1;" edge="1" parent="1" source="n7" target="n2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" value="Data pesanan lengkap" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n7" target="n8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" value="Data pesanan" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n8" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" value="Data tagihan" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n8" target="n9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page2" name="DFD Level 2 - Proses 4.0">
+    <mxGraphModel dx="1422" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="750" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="DFD Level 2 – Proses 4.0 Proses Pembayaran Digital" vertex="1" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;">
+          <mxGeometry x="30" y="10" width="1100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="&lt;b&gt;3.0&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Buat Pre-Order &amp; Takeaway" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;strokeWidth=2;fontSize=12;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="292" width="200" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="&lt;b&gt;4.1&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Buat Tagihan QRIS / E-Wallet" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="315" y="282" width="210" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="&lt;b&gt;4.2&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Terima Konfirmasi Pembayaran" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="675" y="282" width="210" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="&lt;b&gt;4.3&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Verifikasi &amp; Catat Transaksi" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="282" width="210" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="&lt;b&gt;4.4&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Kirim Bukti &amp; Teruskan Pesanan" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="552" width="210" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="&lt;b&gt;5.0&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Kelola Pesanan &amp; Jadwal Masak" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;strokeWidth=2;fontSize=12;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="562" width="200" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="Payment Gateway" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="695" y="72" width="170" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" value="Mahasiswa &amp; Dosen" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="695" y="562" width="170" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="&lt;b&gt;D5&lt;/b&gt;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;Transaksi" style="shape=partialRectangle;whiteSpace=wrap;html=1;right=0;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="87" width="170" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" value="Data tagihan" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n2" target="n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" value="Permintaan pembayaran" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n3" target="n8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" value="Kode QRIS / tagihan" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n3" target="n9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" value="Status pembayaran&lt;br&gt;(callback)" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n8" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" value="Status pembayaran valid" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n4" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" value="Data transaksi" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;startArrow=block;startFill=1;" edge="1" parent="1" source="n5" target="n10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" value="Transaksi terverifikasi" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n5" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" value="Bukti pembayaran" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n6" target="n9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" value="Pesanan terbayar" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page3" name="DFD Level 2 - Proses 5.0">
+    <mxGraphModel dx="1422" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="750" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="DFD Level 2 – Proses 5.0 Kelola Pesanan &amp; Jadwal Masak" vertex="1" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;">
+          <mxGeometry x="30" y="10" width="1100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="&lt;b&gt;4.0&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Proses Pembayaran Digital" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;strokeWidth=2;fontSize=12;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="292" width="200" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="&lt;b&gt;5.1&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Terima Pesanan Terbayar" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="315" y="282" width="210" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="&lt;b&gt;5.2&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Susun Jadwal Masak" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="675" y="282" width="210" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="&lt;b&gt;5.3&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Update Status Masak" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="282" width="210" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="&lt;b&gt;5.4&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Tandai Siap Diambil" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="552" width="210" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="&lt;b&gt;6.0&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Kirim Notifikasi" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;strokeWidth=2;fontSize=12;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="680" y="562" width="200" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="Pengelola Stand" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1415" y="292" width="170" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" value="&lt;b&gt;D4&lt;/b&gt;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;Pesanan" style="shape=partialRectangle;whiteSpace=wrap;html=1;right=0;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="695" y="87" width="170" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="Pesanan terbayar" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n2" target="n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" value="Data pesanan (status&lt;br&gt;diproses)" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n3" target="n9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" value="Jam takeaway &amp; data&lt;br&gt;pesanan" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n9" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" value="Data pesanan masuk" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n4" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" value="Jadwal masak" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;curved=1;" edge="1" parent="1" source="n4" target="n8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1140" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" value="Status masak" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n8" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" value="Status masak terbaru" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n5" target="n9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" value="Status = siap" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n5" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" value="Status siap diambil" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page4" name="DFD Level 2 - Proses 6.0">
+    <mxGraphModel dx="1422" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="750" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="DFD Level 2 – Proses 6.0 Kirim Notifikasi" vertex="1" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;">
+          <mxGeometry x="30" y="10" width="1100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="&lt;b&gt;5.0&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Kelola Pesanan &amp; Jadwal Masak" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;strokeWidth=2;fontSize=12;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="0" y="292" width="200" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="&lt;b&gt;6.1&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Terima Pemicu Notifikasi" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="315" y="282" width="210" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="&lt;b&gt;6.2&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Ambil Kontak Penerima" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="675" y="282" width="210" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="&lt;b&gt;6.3&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Susun &amp; Kirim Notifikasi" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="282" width="210" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="&lt;b&gt;6.4&lt;/b&gt;&lt;hr size='1' style='margin:2px 0'&gt;Catat Log Notifikasi" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="62" width="210" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="&lt;b&gt;D1&lt;/b&gt;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;Pengguna" style="shape=partialRectangle;whiteSpace=wrap;html=1;right=0;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="695" y="87" width="170" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="&lt;b&gt;D6&lt;/b&gt;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;Notifikasi" style="shape=partialRectangle;whiteSpace=wrap;html=1;right=0;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1415" y="87" width="170" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" value="Pengelola Stand" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1415" y="292" width="170" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="Mahasiswa &amp; Dosen" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="562" width="170" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" value="Data pesanan masuk /&lt;br&gt;siap diambil" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n2" target="n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" value="Id pemesan &amp; jenis&lt;br&gt;notifikasi" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n3" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" value="Nomor WhatsApp" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n7" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" value="Kontak penerima" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n4" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" value="Notifikasi pesanan masuk" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n5" target="n9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" value="Notifikasi siap pick-up" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n5" target="n10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" value="Data notifikasi terkirim" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n5" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" value="Log notifikasi" style="html=1;rounded=0;fontSize=11;labelBackgroundColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1" source="n6" target="n8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
